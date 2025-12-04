@@ -20,12 +20,13 @@ The best-fit line is given by:
 \[
 y = m x + b
 \]
+
 \[
 x_mean = sum(x)/len(x)
 \]
 
 
-/[
+\[
 y_mean = sum(y)/len(y)
 \]
 
