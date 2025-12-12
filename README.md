@@ -129,3 +129,56 @@ Simple from-scratch implementation of **batch gradient descent** to fit a linear
 
 **Gradient updates**:
 
+#  Stochastic Gradient Descent for Linear Regression
+
+###  Overview
+This Python project demonstrates **Linear Regression** using **Stochastic Gradient Descent (SGD)** — one of the fundamental optimization algorithms in machine learning.
+
+Unlike **Batch Gradient Descent**, which updates parameters after processing the entire dataset, **SGD** updates the model **after each individual data point**.  
+This allows faster learning (though sometimes noisier updates), making it a great educational example of how models gradually learn patterns.
+
+---
+
+\[
+Y_{pred} = B0 + B1 \times X
+\]
+
+Where:
+- `B0` → Intercept (bias)
+- `B1` → Slope (weight)
+- `X` → Input data
+- `Y` → Actual output data
+
+---
+
+###  Loss Function
+
+The program minimizes the **Mean Squared Error (MSE)**:
+
+\[
+Loss = (Y_{pred} - Y)^2
+\]
+
+For each data point, the parameters are updated using the following gradient descent rules:
+
+\[
+B0 := B0 - A \times (Y_{pred} - Y)
+\]
+\[
+B1 := B1 - A \times (Y_{pred} - Y) \times X
+\]
+
+Where:
+- `A` → Learning Rate (step size controlling how fast the model learns)
+
+---
+
+## 🧩 Features
+
+ Implements **Stochastic Gradient Descent** step-by-step  
+ Shows **parameter updates (B0, B1)** and **loss** after each iteration  
+ Interactive user inputs for dataset and hyperparameters  
+ Perfect for **students and beginners** learning how gradient descent works  
+
+---
+
